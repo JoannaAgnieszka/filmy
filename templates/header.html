@@ -1,0 +1,28 @@
+<header>
+    <nav>
+        <ul>
+            <li {% if active == 'person' %} class="active" {% endif %}>
+                <a href="{% url 'person' %}">Osoba</a>
+            </li>
+            <li {% if active == 'category' %} class="active" {% endif %}>
+                <a href="{% url 'category' %}">Kategoria</a>
+            </li>
+            <li>
+                <a href="{% url 'category' %}">Wytwornie</a>
+            </li>
+            <li>
+                <a href="{% url 'movie' %}">Film</a>
+            </li>
+            <li {% if active == 'movie_list' %} class="active" {% endif %}>
+                <a href="{% url 'movies' %}">Filmy</a>
+            </li>
+
+         <li {% if active == 'category_list' %} class="active" {% endif %}>
+                <a href="{% url 'categories' %}">Kategorie</a>
+            </li>
+        <li {% if active == 'person_list' %} class="active" {% endif %}>
+                <a href="{% url 'persons' %}">Osoby</a>
+            </li>
+        </ul>
+    </nav>
+</header>

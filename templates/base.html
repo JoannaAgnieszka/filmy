@@ -1,0 +1,15 @@
+<html>
+{% load static %}
+<head>
+<link rel="stylesheet" href="{% static 'sikorka/style.css' %}">
+</head>
+<body>
+    <h1> Baza Filmowa -- {{ date }}-- {{ user }}</h1>
+    {% block header %}
+        {% include 'header.html' %}
+    {% endblock %}
+    {% block content %}
+        tutaj beda wstawiać sie podstrony
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,33 @@
+header {
+    background: #AEC6CF;
+    padding: 20px 30px;
+    max-width: 940px;
+    margin: auto;
+}
+ nav {
+     display: inline-block;
+     align-content: center;
+ }
+nav ul li a {
+    background: inherit;
+    padding: 2px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #444;
+    border-radius: 10px;
+}
+nav ul li a:hover {
+	background: #FFF;
+}
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+nav ul {
+    list-style: none;
+}
+.active
+{
+    background-color: #69c2ff;
+}
